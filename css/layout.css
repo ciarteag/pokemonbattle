@@ -1,0 +1,147 @@
+body
+{
+    font-family: 'Noto Sans JP';
+    font-size: 16px;
+    margin: 0;
+}
+
+.title
+{
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+p
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-transform: capitalize;
+}
+li
+{
+    /* display: inline-block; */
+    text-transform: capitalize;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 0.7px;
+    list-style-type:none;
+    /* padding-right: auto; */
+
+}
+ul
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.pokemonShowcase {
+    display:grid;
+    grid-template-columns: 1fr 150px 1fr;
+
+    max-width: 700px;
+    margin: auto;
+}
+
+
+
+.pokemonStatShowcase {
+    display:grid;
+    grid-template-columns: 1fr 150px 1fr;
+
+    max-width: 700px;
+    margin: auto;
+}
+
+.battleInfo {
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    /* max-width: 800px; */
+    margin: auto;
+    margin-bottom: 0px;
+}
+
+.veryBottom {
+    display:grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+
+    /* max-width: 800px; */
+    margin: auto;
+    margin-top: 1px;
+    margin-bottom: 25px;
+}
+.pokemonType {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 1px;
+    padding-bottom: 2px;
+}
+
+.typeImage{
+    height: 2.2em;
+}
+
+.newBattleButton { 
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+.battleButton{
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1px;
+    /* margin-bottom: 10px; */
+    font-size: 26px;
+    cursor: pointer;
+    margin-bottom: 2px;
+}
+
+.newBattleButton:hover {
+    background-color: #016d91;
+}
+.pokemon {
+    border: 1px solid#333;
+    padding:10px;
+
+    background: #f4f4f5;
+    text-align: center;
+}
+
+.pokemonStat {
+    padding:10px;
+    text-align: center;
+    /* same as .pokemon but no border and fill */
+
+}
+.vs {
+    text-align: center;
+    margin: auto;
+    font-size: 30px;
+}
+.fullHP{
+    color: limegreen;
+}
+
+img{
+    width:100%
+}

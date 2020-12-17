@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Online scripts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><!--JQuery-->
+    <!--Load local javascript-->
+    <script src="js/pokemon.js"></script>
+    <!--Load local stylesheet-->
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+JP">
+
+    <title>Pokemon Random Battle</title>
+</head>
+
+<body>
+    <h1 class= "title">Pokemon Random Battle </h1>
+    <button class = "newBattleButton" onclick="getPokemons()"> New Battle</button>
+    <div class = "pokemonShowcase" id = "pokemonList" >
+        <div class = "pokemon" id = "pokemon-1">
+            <img src="placeholder" alt="pokemon1 image">
+            <p> </p>
+            <p> </p>
+        </div>
+        <div class = "vs"> vs</div>
+        <div class = "pokemon" id = "pokemon-2">
+            <img src="placeholder" alt="pokemon2 image">
+            <p></p>
+            <p></p>
+        </div>
+    </div>  
+
+    <div class = "pokemonStatShowcase" id = "pokemonStatList" >
+        <div class = "pokemonStat" id = "pokemonStat-1">
+            <p> Pokemon Number:  </p> 
+            <p> Pokemon Name</p>
+            <div class = "pokemonType"> 
+                <p> Type 1: </p>
+                <img src="placeholder" alt="pokemon1 type1 image" class = "typeImage">
+            </div>
+            <div class = "pokemonType"> 
+                <p> Type 2: </p>
+                <img src="placeholder" alt="pokemon1 type2 image" class = "typeImage">
+            </div>
+            <p> Level: </p>
+            <p class = "fullHP"> HP:  </p>
+            <ul>
+                <li>Move 1: no moves found </li>
+                <li>Move 2: no moves found</li>
+                <li>Move 3: no moves found</li>
+                <li>Move 4: no moves found</li>
+            </ul>
+        </div>
+        <div></div>
+        <div class = "pokemonStat" id = "pokemonStat-2">
+            <p> Pokemon Number:  </p> 
+            <p> Pokemon Name: </p>
+            <div class = "pokemonType"> 
+                <p> Type 1: </p>
+                <img src="placeholder" alt="pokemon2 type1 image" class = "typeImage">
+            </div>
+            <div class = "pokemonType"> 
+                <p> Type 2: </p>
+                <img src="placeholder" alt="pokeomon2 type2 image" class = "typeImage">
+            </div>
+            <p> Level: </p>
+            <p class = "fullHP"> HP:  </p>
+            <ul>
+                <li>Move 1: no moves found </li>
+                <li>Move 2: no moves found</li>
+                <li>Move 3: no moves found</li>
+                <li>Move 4: no moves found</li>
+            </ul>
+        </div>
+    </div>  
+    <div>
+        <button class = "battleButton" onclick="battleButton()" > Battle!</button>
+    </div>
+    <div id = "pokemonMessageList">
+        <div id = "pokemonBattleDiv">
+            <p class = "battleInfo"> </p>
+            <p class = "veryBottom"> </p>
+    
+        </div>
+    </div>
+
+
+</body>
+</html>
